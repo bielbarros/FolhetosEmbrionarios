@@ -10,6 +10,9 @@
     body {
       margin: 0; /* Remova as margens padrão do corpo para evitar espaços em branco */
       margin-bottom: 100px; /* Adiciona espaço no final da página */
+      background: var(--bg-url-mobile) no-repeat center center fixed;
+      background-size: cover; /* Garante que o fundo cubra toda a tela */
+      height: 100vh;
     }
     #container {
       display: flex; /* Faz com que os elementos dentro do container sejam exibidos em linha */
@@ -31,8 +34,8 @@
       text-align: center; /* Centraliza o conteúdo do li */
     }
     video {
-      width: 500px; /* Garante que o vídeo ocupe toda a largura do elemento pai */
-      height: 500px; /* Permite que a altura seja ajustada automaticamente, mantendo a proporção do vídeo */
+      max-width: 100%; /* Altere a largura máxima do vídeo para que ele se ajuste ao tamanho do contêiner pai */
+      height: auto; /* Permita que a altura seja ajustada automaticamente para manter a proporção do vídeo */
     }
     /* Ajuste as margens conforme necessário */
     li:first-child {
@@ -69,7 +72,5 @@
       </li>
     </ul>
   </div>
-  
-
 </body>
 </html>
