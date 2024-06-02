@@ -58,5 +58,5 @@ body * {
 
 video {
   position: relative; /* Define a posição relativa para o vídeo */
-  z-index: 1; /* Garante que o vídeo esteja acima do fundo */
+  z-index: 0; /* Garante que o vídeo esteja acima do fundo */
 }
