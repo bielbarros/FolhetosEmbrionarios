@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrabalhoNicole</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Adicionei estilos CSS para ajustar o layout */
+    body {
+      margin: 0; /* Remova as margens padrão do corpo para evitar espaços em branco */
+      margin-bottom: 100px; /* Adiciona espaço no final da página */
+    }
+    #container {
+      display: flex; /* Faz com que os elementos dentro do container sejam exibidos em linha */
+      justify-content: center; /* Alinha os elementos no centro horizontalmente */
+      align-items: center; /* Alinha os elementos no centro verticalmente */
+      flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha, se necessário */
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      flex: 1 1 100%; /* Faz com que os elementos ocupem toda a largura do container */
+      max-width: 100%; /* Limita a largura dos elementos a 100% */
+      padding: 10px; /* Adiciona um espaçamento entre os elementos */
+      text-align: center; /* Centraliza o conteúdo do li */
+    }
+    video {
+      width: 500px; /* Garante que o vídeo ocupe toda a largura do elemento pai */
+      height: 500px; /* Permite que a altura seja ajustada automaticamente, mantendo a proporção do vídeo */
+    }
+    /* Ajuste as margens conforme necessário */
+    li:first-child {
+      margin-top: 300px; /* Move o primeiro vídeo mais para baixo */
+    }
+    li:nth-child(2) {
+      margin-top: 30px; /* Move o segundo vídeo mais para cima */
+    }
+    figcaption a {
+      font-size: 20px; /* Aplica uma fonte menor aos links */
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <ul>
+      <li>
+        <video src="assets/VIDEO2.mp4" 
+        controls
+        poster="assets/capa2.jpeg"
+        ></video>
+        <figcaption>Processo da Fecundação Ilustrado <br>
+          <a href="">Pinterest. Ciclo embrionário. <br> Disponível em: https://pin.it/1lBGHdSS6. Acesso em: 1 jun. 2024.</a>
+        </figcaption>
+      </li>
+      <li>
+        <video src="assets/VIDEO1.mp4" 
+        controls
+        poster="assets/capa1.jpeg"
+        ></video>
+        <figcaption>Desenvolvimento Embrionário de uma Salamandra <br>
+          <a href="">Kurzgesagt – In a Nutshell. The Ultimate Fate of the Universe. <br> Disponível em: https://youtu.be/SEejivHRIbE?si=WpOH49ChL1FyTxMt. Acesso em: 1 jun. 2024.</a>
+        </figcaption>
+      </li>
+    </ul>
+  </div>
+  
+
+</body>
+</html>
