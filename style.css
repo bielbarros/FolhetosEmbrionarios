@@ -1,31 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255,255,255, 0.5);
   --surface-color: rgba(255,255,255,0.05);
   --surface-color-hover: rgba(0,0,0,0.02);
   --highlight-color: rgba(255,255,255,0.2);
- 
+  
+  --bg-url-mobile: url(./assets/bg-mobile.jpg);
+  --bg-url-mobile-light: url(./assets/bg-mobile-light.jpg);
+  --bg-url-desktop: url(./assets/bg-desktop.jpg);
+  --bg-url-desktop-light: url(./assets/bg-desktop-light.jpeg);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0,0,0, 0.5);
   --surface-color: rgba(0,0,0,0.05);
   --surface-color-hover: rgba(0,0,0,0.02);
   --highlight-color: rgba(0,0,0,0.1);
-
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
+  background: var(--bg-url-mobile) no-repeat top center/cover;
   height: 100vh;
 }
 
@@ -43,17 +38,17 @@ body * {
 }
 
 @media (min-width: 700px) {
-  :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
+  body {
+    background: var(--bg-url-desktop) no-repeat top center/cover;
   }
   
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpeg);
+    background: var(--bg-url-desktop-light) no-repeat top center/cover;
   }
 }
 
 @media (max-width: 700px) {
   body {
-    --bg-url: url(./assets/bg-mobile.jpg);
+    background: var(--bg-url-mobile-light) no-repeat top center/cover;
   }
 }
