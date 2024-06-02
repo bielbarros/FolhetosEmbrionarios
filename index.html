@@ -6,19 +6,37 @@
   <title>TrabalhoNicole</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Adicionei estilos CSS para ajustar o layout */
-    body {
-      margin: 0; /* Remova as margens padrão do corpo para evitar espaços em branco */
-      margin-bottom: 100px; /* Adiciona espaço no final da página */
+    /* Estilo para o fundo em dispositivos desktop */
+    .background-desktop {
+      background: var(--bg-url-desktop) no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Estilo para o fundo em dispositivos móveis */
+    .background-mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
       background: var(--bg-url-mobile) no-repeat center center fixed;
-      background-size: cover; /* Garante que o fundo cubra toda a tela */
+      background-size: cover;
+    }
+
+    /* Estilo para o corpo */
+    body {
+      margin: 0;
+      margin-bottom: 100px;
       height: 100vh;
     }
+
+    /* Restante do seu estilo CSS */
     #container {
-      display: flex; /* Faz com que os elementos dentro do container sejam exibidos em linha */
-      justify-content: center; /* Alinha os elementos no centro horizontalmente */
-      align-items: center; /* Alinha os elementos no centro verticalmente */
-      flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha, se necessário */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
     }
     ul {
       list-style: none;
@@ -28,28 +46,43 @@
       margin: 0;
     }
     li {
-      flex: 1 1 100%; /* Faz com que os elementos ocupem toda a largura do container */
-      max-width: 100%; /* Limita a largura dos elementos a 100% */
-      padding: 10px; /* Adiciona um espaçamento entre os elementos */
-      text-align: center; /* Centraliza o conteúdo do li */
+      flex: 1 1 100%;
+      max-width: 100%;
+      padding: 10px;
+      text-align: center;
     }
     video {
-      max-width: 100%; /* Altere a largura máxima do vídeo para que ele se ajuste ao tamanho do contêiner pai */
-      height: auto; /* Permita que a altura seja ajustada automaticamente para manter a proporção do vídeo */
+      width: 500px; /* Defina a largura dos vídeos como 100% */
+      height: auto;
     }
-    /* Ajuste as margens conforme necessário */
     li:first-child {
-      margin-top: 300px; /* Move o primeiro vídeo mais para baixo */
+      margin-top: 300px;
     }
     li:nth-child(2) {
-      margin-top: 30px; /* Move o segundo vídeo mais para cima */
+      margin-top: 30px;
     }
     figcaption a {
-      font-size: 20px; /* Aplica uma fonte menor aos links */
+      font-size: 20px;
+    }
+
+    /* Media query para dispositivos móveis */
+    @media only screen and (max-width: 600px) {
+      .background-desktop {
+        display: none; /* Oculta o fundo em dispositivos móveis */
+      }
+    }
+
+    /* Media query para dispositivos desktop */
+    @media only screen and (min-width: 601px) {
+      .background-mobile {
+        display: none; /* Oculta o fundo em dispositivos desktop */
+      }
     }
   </style>
 </head>
 <body>
+  <div class="background-desktop"></div> <!-- Fundo para dispositivos desktop -->
+  <div class="background-mobile"></div> <!-- Fundo para dispositivos móveis -->
   <div id="container">
     <ul>
       <li>
