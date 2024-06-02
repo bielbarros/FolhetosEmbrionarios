@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
@@ -10,8 +11,7 @@
   --surface-color: rgba(255,255,255,0.05);
   --surface-color-hover: rgba(0,0,0,0.02);
   --highlight-color: rgba(255,255,255,0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg);
-
+ 
 }
 
 .light {
@@ -21,39 +21,26 @@
   --surface-color: rgba(0,0,0,0.05);
   --surface-color-hover: rgba(0,0,0,0.02);
   --highlight-color: rgba(0,0,0,0.1);
-  --switch-bg-url: url(./assets/sun.svg);
+
 }
 
-
 body {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-
-  /*background: color image repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
-  
-  figcaption {
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-    font-size: 30px;
-    padding: 30px
-    
-  
-  }
-  
+}
 
+figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 30px;
+  padding: 30px;
 }
 
 body * {
   font-family: 'Inter', sans-serif; 
   color: var(--text-color);
 }
-
 
 @media (min-width: 700px) {
   :root {
@@ -63,8 +50,10 @@ body * {
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpeg);
   }
-
 }
-  
 
-  
+@media (max-width: 700px) {
+  body {
+    --bg-url: url(./assets/bg-mobile.jpg);
+  }
+}
