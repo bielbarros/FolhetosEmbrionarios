@@ -1,15 +1,3 @@
-:root {
-  --text-color: white;
-  --stroke-color: rgba(255,255,255, 0.5);
-  --surface-color: rgba(255,255,255,0.05);
-  --surface-color-hover: rgba(0,0,0,0.02);
-  --highlight-color: rgba(255,255,255,0.2);
-  
-  --bg-url-mobile: url(./assets/bg-mobile.jpg);
-  --bg-url-mobile-light: url(./assets/bg-mobile-light.jpg);
-  --bg-url-desktop: url(./assets/bg-desktop.jpg);
-  --bg-url-desktop-light: url(./assets/bg-desktop-light.jpeg);
-}
 
 .light {
   --text-color: black;
@@ -17,9 +5,9 @@
   --surface-color: rgba(0,0,0,0.05);
   --surface-color-hover: rgba(0,0,0,0.02);
   --highlight-color: rgba(0,0,0,0.1);
-  --bg-url-mobile: url(./assets/bg-mobile.jpg);
-  --bg-url-mobile-light: url(./assets/bg-mobile-light.jpg);
-  --bg-url-desktop: url(./assets/bg-desktop.jpg);
+  --bg-url-mobile: url(./assets/bg-mobile.jpeg);
+  --bg-url-mobile-light: url(./assets/bg-mobile-light.jpeg);
+  --bg-url-desktop: url(./assets/bg-desktop.jpeg);
   --bg-url-desktop-light: url(./assets/bg-desktop-light.jpeg);
 
 }
