@@ -17,6 +17,11 @@
   --surface-color: rgba(0,0,0,0.05);
   --surface-color-hover: rgba(0,0,0,0.02);
   --highlight-color: rgba(0,0,0,0.1);
+  --bg-url-mobile: url(./assets/bg-mobile.jpg);
+  --bg-url-mobile-light: url(./assets/bg-mobile-light.jpg);
+  --bg-url-desktop: url(./assets/bg-desktop.jpg);
+  --bg-url-desktop-light: url(./assets/bg-desktop-light.jpeg);
+
 }
 
 body {
