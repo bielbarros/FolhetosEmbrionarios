@@ -21,10 +21,10 @@
 
 body {
   background: var(--bg-url-mobile) no-repeat top center/cover;
-  height: 100vh;
-  width: 100%;
-  background-attachment: fixed; /* Fixa o fundo */
-  position: relative; /* Define a posição relativa para o corpo */
+  height: 100vh; /* Defina a altura do corpo para ocupar toda a tela */
+  width: 100%; /* Defina a largura do corpo para ocupar toda a largura da tela */
+  font-family: 'Inter', sans-serif; 
+  color: var(--text-color);
 }
 
 figcaption {
@@ -33,11 +33,6 @@ figcaption {
   font-style: italic;
   font-size: 30px;
   padding: 30px;
-}
-
-body * {
-  font-family: 'Inter', sans-serif; 
-  color: var(--text-color);
 }
 
 @media (min-width: 700px) {
@@ -54,9 +49,4 @@ body * {
   body {
     background: var(--bg-url-mobile-light) no-repeat top center/cover;
   }
-}
-
-video {
-  position: relative; /* Define a posição relativa para o vídeo */
-  z-index: 0; /* Garante que o vídeo esteja acima do fundo */
 }
