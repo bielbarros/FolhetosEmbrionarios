@@ -48,5 +48,7 @@ figcaption {
 @media (max-width: 700px) {
   body {
     background: var(--bg-url-mobile-light) no-repeat top center/cover;
+    background-size: cover; /* Adiciona a propriedade para cobrir toda a tela */
   }
 }
+
