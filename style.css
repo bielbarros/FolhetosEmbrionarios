@@ -21,7 +21,7 @@
 
 body {
   background: var(--bg-url-mobile) no-repeat top center/cover;
-  height: 100vh; /* Defina a altura do corpo para ocupar toda a tela */
+  height: 100%; /* Defina a altura do corpo para ocupar toda a tela */
   width: 100%; /* Defina a largura do corpo para ocupar toda a largura da tela */
   font-family: 'Inter', sans-serif; 
   color: var(--text-color);
