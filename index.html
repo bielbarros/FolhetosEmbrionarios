@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br"
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,9 @@
     .background-desktop {
       background: var(--bg-url-desktop) no-repeat center center fixed;
       background-size: cover;
+      width: 100%;
+      height: 100%;
+
     }
 
     /* Estilo para o fundo em dispositivos móveis */
@@ -68,7 +71,7 @@
     }
 
     /* Media query para dispositivos móveis */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
       .background-desktop {
         display: none; /* Oculta o fundo em dispositivos móveis */
       }
@@ -110,8 +113,6 @@
       </li>
     </ul>
   </div>
-
-  <script src="script.js"></script>
 
 </body>
 </html>

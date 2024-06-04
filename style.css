@@ -1,23 +1,10 @@
 :root {
-  --text-color: white;
-  --stroke-color: rgba(255,255,255, 0.5);
-  --surface-color: rgba(255,255,255,0.05);
-  --surface-color-hover: rgba(0,0,0,0.02);
-  --highlight-color: rgba(255,255,255,0.2);
-  
   --bg-url-mobile: url(./assets/bg-mobile.jpeg);
   --bg-url-mobile-light: url(./assets/bg-mobile-light.jpeg);
   --bg-url-desktop: url(./assets/bg-desktop.jpeg);
   --bg-url-desktop-light: url(./assets/bg-desktop-light.jpeg);
 }
 
-.light {
-  --text-color: black;
-  --stroke-color: rgba(0,0,0, 0.5);
-  --surface-color: rgba(0,0,0,0.05);
-  --surface-color-hover: rgba(0,0,0,0.02);
-  --highlight-color: rgba(0,0,0,0.1);
-}
 
 body {
   background: var(--bg-url-mobile) no-repeat top center/cover;
@@ -46,14 +33,12 @@ figcaption {
   padding: 30px;
 }
 
+
 @media (min-width: 100%) {
   body {
     background: var(--bg-url-desktop) no-repeat top center/cover;
   }
   
-  .light {
-    background: var(--bg-url-desktop-light) no-repeat top center/cover;
-  }
 }
 
 @media (max-width: 100%) {
