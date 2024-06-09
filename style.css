@@ -1,10 +1,19 @@
 :root {
-  --bg-url-mobile: url(./assets/bg-mobile.jpeg);
-  --bg-url-mobile-light: url(./assets/bg-mobile-light.jpeg);
+  --bg-url-mobile: url(./assets/bg-mobile.jfif);
   --bg-url-desktop: url(./assets/bg-desktop.jpeg);
-  --bg-url-desktop-light: url(./assets/bg-desktop-light.jpeg);
 }
 
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Inter', sans-serif; 
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+}
 
 body {
   background: var(--bg-url-mobile) no-repeat top center/cover;
@@ -33,18 +42,14 @@ figcaption {
   padding: 30px;
 }
 
+/* Media query para dispositivos desktop */
+@media only screen and (min-width: 601px) {
+  .background-mobile {
+    display: none; /* Oculta o fundo em dispositivos desktop */
+  }
 
-@media (min-width: 100%) {
   body {
     background: var(--bg-url-desktop) no-repeat top center/cover;
-  }
-  
-}
-
-@media (max-width: 100%) {
-  body {
-    background: var(--bg-url-mobile-light) no-repeat top center/cover;
     background-size: cover; /* Adiciona a propriedade para cobrir toda a tela */
   }
 }
-
