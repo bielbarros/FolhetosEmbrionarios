@@ -15,6 +15,16 @@ h2 {
   font-family: 'Inter', sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px; /* Reduz o tamanho da fonte para dispositivos móveis */
+  }
+
+  h2 {
+    font-size: 20px; /* Reduz o tamanho da fonte para dispositivos móveis */
+  }
+}
+
 body {
   background: var(--bg-url-mobile) no-repeat top center/cover;
   height: 100%; /* Defina a altura do corpo para ocupar toda a tela */
